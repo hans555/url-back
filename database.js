@@ -11,5 +11,5 @@ let config = {
 let pool = new Pool(config);
 
 module.exports = {
-  pool,
+  pool
 };
