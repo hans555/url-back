@@ -3,17 +3,11 @@ var app = express()
 var cors = require('cors')
 require("dotenv").config() 
 var port = process.env.PORT
-const { handleGetUrl } = require("./urlHandler")
+const { handlePostUrl } = require("./urlHandler")
 
 app.use(cors())
 app.use(express.json())
-app.post("/appointment/get", handleGetAppointment)
-
-app.post("/appointment/fix", handleFixAppointment)
-
-app.post("/appointment/cancel", handleCancelAppointment)
-
-app.post("/appointment/create", handleCreateAppointments)
+app.post("/url/post", handlePostUrl)
 
 app.listen(port, () => {
     console.log(`server is listening on port ${port}`)
