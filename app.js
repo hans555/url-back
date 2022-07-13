@@ -3,7 +3,7 @@ var app = express()
 var cors = require('cors')
 require("dotenv").config() 
 var port = process.env.PORT
-const { handleGetAppointment, handleFixAppointment, handleCancelAppointment, handleCreateAppointments } = require("./appointmentHandler")
+const { handleGetUrl } = require("./urlHandler")
 
 app.use(cors())
 app.use(express.json())
