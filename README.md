@@ -12,11 +12,11 @@ Create a `.env` file and fill up the following values
 
 `DB_USER=`
 
-`URL_NAME`
+`URL_NAME=`
 
 ### Update database
 
-Install postgreSQL and run the `create_table.sql` in the database.
+Install postgreSQL and run the `create_table.sql` in the database. Start the database server.
 
 ## Available Scripts
 
